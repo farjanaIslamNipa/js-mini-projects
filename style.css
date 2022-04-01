@@ -5,3 +5,11 @@
 .color {
     color: #96cef8;
 }
+
+.image-container img{
+    height: 150px;
+    border-radius: 50%;
+    border: 6px solid #96cef8;
+    border-left: none;
+    border-bottom: none;
+}

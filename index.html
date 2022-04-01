@@ -23,7 +23,7 @@
             <h1><span class="mr-2"><i class="fa-brands fa-js"></i></span> Javascript mini projects</h1>
         </div>
 
-        <!-- Color Flipper -->
+        <!-- Color Flipper and counter -->
         <section>
             <div class="container-fluid">
                 <div class="row">
@@ -40,7 +40,7 @@
                             <div class="py-5 my-5 text-center">
                                 <div class="py-4 w-50 mx-auto bg-dark rounded shadow mb-4">
                                     <h2 class="mb-0 text-white">Background Color:</h2>
-                                    <h5 class="mb-0"><span class="color">#F1f5f8</span></h5>
+                                    <h5 class="mb-0"><span class="color text-capitalize">#F1f5f8</span></h5>
                                 </div>
                                 <div class="text-white mb-5 mt-5">
                                     <button class="btn border border-dark text-dark rounded px-5 font-weight-bold shadow-sm" id="btn">Click me</button>
@@ -54,11 +54,42 @@
                             <div><h2 style="font-size: 80px;" id="value" class="my-3 pb-3">0</h2></div>
                             <div class="pb-5">
                                 <button class="counterBtn decrease border border-dark rounded text-dard">Decrease</button>
-                                <button class="counterBtn reset border border-dark rounded text-dard mx-3">Reset</button>
+                                <button class="counterBtn reset border border-dark rounded text-dark mx-3">Reset</button>
                                 <button class="counterBtn increase border border-dark rounded text-dard">Increase</button>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Review -->
+        <section>
+            <div class="container-fluid">
+                <div class="row my-5">
+                    <div class="col-md-6">
+                        <div class="bg-white text-center pt-4 pb-5">
+                            <h2>Our Review</h2>
+                            <div style="width: 60px;" class="mx-auto">
+                                <hr class="m-0" style="border: 2px solid rgb(112, 203, 233)">
+                            </div>
+
+                            <article class="pt-4">
+                                <div class="image-container px-5">
+                                    <img id="person-img" class="img-fluid rounded-full" src="./person.jpg" alt="">
+                                    <h4 id="author" class="text-capitalize">Sarah Jones</h4>
+                                    <p id="job" class="text-info">UX Designer</p>
+                                    <p id="info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora ratione laboriosam, odit iusto maiores qui sunt sapiente architecto, provident quaerat suscipit consequuntur ut, facilis nulla porro enim quibusdam quisquam quidem! Dolore temporibus reiciendis laudantium delectus. Fugiat distinctio reprehenderit exercitationem ut.</p>
+                                </div>
+                                <div>
+                                    <button class="btn prev-btn"><span class="text-info"><i class="fa-solid fa-chevron-left"></i></span></button>
+                                    <button class="btn next-btn"><span class="text-info"><i class="fa-solid fa-chevron-right"></i></span></button>
+                                </div>
+                                <button class="btn border border-info text-info mt-2 random-btn">Surprise me</button>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="col-md-6"></div>
                 </div>
             </div>
         </section>
