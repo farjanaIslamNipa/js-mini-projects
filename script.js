@@ -60,7 +60,7 @@ const reviews = [
         name: 'david warner',
         job: 'software engineer',
         img: 'https://randomuser.me/api/portraits/men/4.jpg',
-        text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora ratione laboriosam, odit iusto maiores qui sunt sapiente architecto, suscipit consequuntur ut, facilis nulla porro enim quibusdam quisquam quidem! laudantium delectus. Fugiat distinctio reprehenderit exercitationem ut.'
+        text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora ratione laboriosam, odit iusto maiores qui sunt sapiente architecto, suscipit consequuntur ut, facilis nulla porro enim quibusdam quisquam quidem! laudantium delectus. Fugiat distinctio reprehenderit exercitationem.'
     },
     {
         id: 3,
@@ -74,21 +74,21 @@ const reviews = [
         name: 'Andrew flintof',
         job: 'Managing director',
         img: 'https://randomuser.me/api/portraits/men/92.jpg',
-        text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora ratione laboriosam, odit iusto maiores qui sunt quaerat suscipit consequuntur ut, facilis nulla porro enim quibusdam quisquam quidem! Dolore temporibus reiciendis laudantium delectus. Fugiat distinctio reprehenderit exercitationem ut.'
+        text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora ratione laboriosam, odit iusto maiores qui sunt quaerat suscipit consequuntur ut, facilis nulla porro enim quibusdam quisquam quidem! Dolore temporibus reiciendis laudantium delectus. Fugiat distinctio reprehenderit exercitationem.'
     },
     {
         id: 5,
         name: 'farjana islam',
         job: 'web developer',
         img: 'https://randomuser.me/api/portraits/women/44.jpg',
-        text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora ratione laboriosam, odit iusto maiores qui sunt sapiente architecto, provident quaerat suscipit consequuntur ut, facilis nullbus reiciendis laudantium delectus. Fugiat distinctio reprehenderit exercitationem ut. Dolore temporibus reiciendis laudantium delectus. Fugiat distinctio reprehenderit exercitationem ut'
+        text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora ratione laboriosam, odit iusto maiores qui sunt sapiente architecto, provident quaerat suscipit consequuntur ut, facilis nullbus reiciendis laudantium delectus. Fugiat distinctio reprehenderit exercitationem ut. Dolore temporibus reiciendis laudantium delectus. Fugiat distinctio reprehenderit exercitationem.'
     },
     {
         id: 6,
         name: 'rayan dull',
         job: 'programmer',
         img: 'https://randomuser.me/api/portraits/men/11.jpg',
-        text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora ratione laboriosam, odit iusto maiores qui sunt sapiente architecto, provident consequuntur ut, facilis nulla porro enim quibusdam quisquam quidem! Dolore temporibus reiciendis reprehenderit exercitationem ut.'
+        text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora ratione laboriosam, odit iusto maiores qui sunt sapiente architecto, provident consequuntur ut, facilis nulla porro enim quibusdam quisquam quidem! Dolore temporibus reiciendis reprehenderit exercitationem.'
     },
     {
         id: 7,
@@ -102,21 +102,21 @@ const reviews = [
         name: 'sadman ahnaf',
         job: 'cricketer',
         img: 'https://randomuser.me/api/portraits/women/60.jpg',
-        text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora ratione laboriosam, odit iusto maiores qui sunt sapiente emporibus reiciendis laudantium delectus. Fugiat distinctio reprehenderit exercitationem ut. Dolore temporibus reiciendis laudantium delectus. Fugiat distinctio reprehenderit exercitationem ut'
+        text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora ratione laboriosam, odit iusto maiores qui sunt sapiente emporibus reiciendis laudantium delectus. Fugiat distinctio reprehenderit exercitationem ut. Dolore temporibus reiciendis laudantium delectus. Fugiat distinctio reprehenderit exercitationem.'
     },
     {
         id: 9,
         name: 'Yasha khan',
         job: 'Beautician',
         img: 'https://randomuser.me/api/portraits/women/84.jpg',
-        text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora ratione laboriosam, odit iusto maiores qui sunt sapiente architecto, provident quaerat suscipit consequuntur ut, facilis nulla porro enim quibusdam quisquam quidem! Dolore temporibus reiciendis laudantium delectus. Fugiat distinctio reprehenderit exer.'
+        text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora ratione laboriosam, odit iusto maiores qui sunt sapiente architecto, provident quaerat suscipit consequuntur ut, facilis nulla porro enim quibusdam quisquam quidem! Dolore temporibus reiciendis laudantium delectus. Fugiat distinctio reprehenderit.'
     },
     {
         id: 10,
         name: 'mahveer nawshad',
         job: 'robot scientist',
         img: 'https://randomuser.me/api/portraits/men/86.jpg',
-        text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora ratione laboriosam, odit iusto maiores qui sunt sapiente  ut, facilis nulla porro enim quibusdam quisquam quidem! Dolore temporibus reiciendis laudantium delectus. Fugiat distinctio reprehenderit exercitationem ut reprehenderit exercitationem ut.'
+        text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora ratione laboriosam, odit iusto maiores qui sunt sapiente  ut, facilis nulla porro enim quibusdam quisquam quidem! Dolore temporibus reiciendis laudantium delectus. Fugiat distinctio reprehenderit exercitationem ut reprehenderit exercitationem.'
     },
 ]
 const img = document.getElementById('person-img');
