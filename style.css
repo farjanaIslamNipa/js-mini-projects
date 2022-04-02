@@ -13,3 +13,53 @@
     border-left: none;
     border-bottom: none;
 }
+
+.menu-link {
+    color: rgb(82, 80, 80);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 25px;
+    letter-spacing: 3px;
+    text-decoration: none;
+}
+
+.menu-link:hover {
+    color: #17a2b8;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.menu-link:last-child{
+    padding: 0 0 0 25px;
+}
+
+.social-link {
+    color: #17a2b8;
+    font-size: 25px;
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.social-link:last-child{
+    padding: 0 0 0 10px;
+}
+.social-link:hover {
+    transition: all 0.3s ease;
+    color: gray;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 992px){
+    .links {
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease;
+    }
+    
+}
+
+.show-links {
+    height: 160px;
+    transition: height 0.3s ease;
+}
+

@@ -1,3 +1,13 @@
+
+// Toggle navbar scripts
+const navToggle = document.querySelector('.nav-toggle');
+const links = document.querySelector('.links');
+
+navToggle.addEventListener('click', function(){
+    links.classList.toggle('show-links');
+})
+
+
 // const colors = ['rgba(133, 122, 200)', '#f15025', '#79c2fa', '#79fae9', '#79fa8e', '#e7fa79', '#faad79', '#eb79fa', '#fa7979'];
 const colors = ['aqua', 'azure', 'bisque', 'brown', 'cadetblue', 'darkcyan', 'darkolivegreen', 'hotpink', 'mediumslateblue'];
 const btn = document.getElementById('btn');
@@ -168,3 +178,6 @@ randomBtn.addEventListener('click', function(){
     currentItem = Math.floor(Math.random() * reviews.length);
     showReview();
 })
+
+
+// 
