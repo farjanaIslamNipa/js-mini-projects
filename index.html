@@ -44,15 +44,33 @@
                     <span class="text-info cursor-pointer nav-toggle" style="font-size: 30px;"><i class="fa-solid fa-bars"></i></span>
                     <!-- <span style="font-size: 30px;"><i class="fa-solid fa-bars-staggered"></i></span> -->
                 </div>
+                <div class="sidebar-toggle pr-3 pt-4">
+                    <button class="btn text-info cursor-pointer nav-toggle pointer" style="font-size: 30px;"><i class="fas fa-list"></i></button>
+                </div>
             </div>
         </nav>
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header d-flex justify-content-between px-2 text-white pt-3">
+                <h1><span class="ml-2"><i class="fa-brands fa-js"></i></span></h1>
+                <button class="btn close-sidebar text-white"><i class="fas fa-times"></i></button>
+               
+            </div>
+            <hr class="">
+            <div class=" ml-3 links">
+                <a class="side-link d-block" href="">Home</a>
+                <a class="side-link d-block" href="">About</a>
+                <a class="side-link d-block" href="">Projects</a>
+                <a class="side-link d-block" href="">contact</a>
+            </div>
+        </aside>
         <!-- Color Flipper and counter -->
         <section>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
                         <div id="background_color" class="pt-4">
-                            <h4 class="text-center mb-3 text-uppercase">Color Flipper</h4>
+                            <h4 class="text-center mb-3 text-uppercase py-2">Color Flipper</h4>
                             <nav class="text-center bg-secondary shadow py-3 px-5">
                                 <ul class="m-0 p-0">
                                     <li class="d-inline mr-3 mb-0"><a class="text-white" href="index.html">Simple</a></li>
@@ -71,25 +89,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="pt-4 text-center bg-white rounded py-5">
-                            <h1 style="font-size: 50px;" class="">Counter</h1>
-                            <div><h2 style="font-size: 80px;" id="value" class="my-3 pb-3">0</h2></div>
-                            <div class="pb-5">
-                                <button class="counterBtn decrease border border-dark rounded text-dard">Decrease</button>
-                                <button class="counterBtn reset border border-dark rounded text-dark mx-3">Reset</button>
-                                <button class="counterBtn increase border border-dark rounded text-dard">Increase</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Our Review -->
-        <section>
-            <div class="container-fluid">
-                <div class="row mb-5">
                     <div class="col-md-6">
                         <div class="bg-white text-center pt-4 pb-5">
                             <h2>Our Review</h2>
@@ -111,8 +110,35 @@
                                 <button class="btn border border-info text-info mt-2 random-btn">Surprise me</button>
                             </article>
                         </div>
+
                     </div>
-                    <div class="col-md-6"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Review -->
+        <section>
+            <div class="container-fluid">
+                <div class="row mb-5">
+                    <div class="col-md-6">
+                        <div class="pt-4 text-center bg-white rounded py-5">
+                            <h1 style="font-size: 50px;" class="">Counter</h1>
+                            <div><h2 style="font-size: 80px;" id="value" class="my-3 pb-3">0</h2></div>
+                            <div class="pb-5">
+                                <button class="counterBtn decrease border border-dark rounded text-dard">Decrease</button>
+                                <button class="counterBtn reset border border-dark rounded text-dark mx-3">Reset</button>
+                                <button class="counterBtn increase border border-dark rounded text-dard">Increase</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="py-5 bg-white text-center">
+                            <h1 class="pt-5">Creating Modal</h1>
+                            <div class="my-4 pb-5">
+                                <button class="btn open-modal btn-info rounded px-4">Click to open modal</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

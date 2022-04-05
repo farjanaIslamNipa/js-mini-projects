@@ -180,4 +180,64 @@ randomBtn.addEventListener('click', function(){
 })
 
 
+// sidebar
+const toggleBtn = document.querySelector('.sidebar-toggle');
+const closeBtn = document.querySelector('.close-sidebar');
+const sidebar = document.querySelector('.sidebar');
+
+toggleBtn.addEventListener('click', function(){
+    // if (sidebar.classList.contains('show-sidebar')) {
+    //     sidebar.classList.remove('show-sidebar')
+    // }
+    // else{
+    //     sidebar.classList.add('show-sidebar')
+    // }
+    sidebar.classList.toggle('show-sidebar');
+})
+
+closeBtn.addEventListener('click', function(){
+    sidebar.classList.remove('show-sidebar')
+})
+
 // 
+
+
+// Getting current date and time
+// var today = new Date();
+//   var day = today.getDay();
+  
+//   var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+//   console.log("Today is : " + daylist[day] + ".");
+//   var hour = today.getHours();
+//   console.log(hour);
+//   var minute = today.getMinutes();
+//   var second = today.getSeconds();
+//   var prepand = (hour >= 12)? " PM ":" AM ";
+//   hour = (hour >= 12)? hour - 12: hour;
+//   if (hour===0 && prepand===' PM ') 
+//   { 
+//   if (minute===0 && second===0)
+//   { 
+//   hour=12;
+//   prepand=' Noon';
+//   } 
+//   else
+//   { 
+//   hour=12;
+//   prepand=' PM';
+//   } 
+//   } 
+//   if (hour===0 && prepand===' AM ') 
+//   { 
+//   if (minute===0 && second===0)
+//   { 
+//   hour=12;
+//   prepand=' Midnight';
+//   } 
+//   else
+//   { 
+//   hour=12;
+//   prepand=' AM';
+//   } 
+//   } 
+// console.log("Current Time : "+hour + prepand + " : " + minute + " : " + second);

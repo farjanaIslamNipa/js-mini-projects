@@ -18,3 +18,4 @@ btn.addEventListener('click', function() {
 function getRandomColor() {
     return Math.floor(Math.random() * hex.length);
 }
+

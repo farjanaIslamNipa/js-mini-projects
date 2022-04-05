@@ -63,3 +63,40 @@
     transition: height 0.3s ease;
 }
 
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #96cef8;
+
+    row-gap: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    transition: all 0.3s ease;
+    transform: translate(-100%);
+    z-index: 9999;
+}
+
+.side-link {
+    color: rgb(36, 36, 36);
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.show-sidebar{
+    transform: translate(0);
+}
+
+@media screen and (min-width: 676px){
+    .sidebar {
+        width: 400px;
+    }
+    
+}
+
+
+
