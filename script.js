@@ -199,6 +199,22 @@ closeBtn.addEventListener('click', function(){
     sidebar.classList.remove('show-sidebar')
 })
 
+
+
+// MOdal scripts
+const openModalBtn = document.querySelector('.create-modal-btn');
+const modalOverlay = document.querySelector('.modal-overlay');
+const modalCloseBtn = document.querySelector('.modal-close-btn');
+
+openModalBtn.addEventListener('click', function(){
+    modalOverlay.classList.toggle('open-modal')
+})
+
+modalCloseBtn.addEventListener('click', function(){
+    modalOverlay.classList.remove('open-modal')
+})
+
+
 // 
 
 

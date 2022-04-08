@@ -98,5 +98,24 @@
     
 }
 
+/* MOdal css */
+.modal-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(255, 0, 0, 0.5); */
+    display: grid;
+    place-items: center;
+    transition: all 0.3s ease;
+    visibility: hidden;
+    z-index: -10;
+}
 
+.open-modal{
+    visibility: visible;
+    z-index: 10;
+}
 
