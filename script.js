@@ -214,6 +214,34 @@ modalCloseBtn.addEventListener('click', function(){
     modalOverlay.classList.remove('open-modal')
 })
 
+// collapse scripts
+
+const questions = document.querySelectorAll('.question');
+questions.forEach(function(question){
+    const collapseBtn = question.querySelector('.question-btn');
+    collapseBtn.addEventListener('click', function(){
+
+        questions.forEach('click', function(item){
+            if(item !== question) {
+                item.classList.remove('show-text');
+            }
+        })
+        question.classList.toggle('show-text');
+    })
+})
+
+// traversing the dom
+// const collapseBtns = document.querySelectorAll('.question-btn');
+
+// collapseBtns.forEach(function(btn){
+//     btn.addEventListener('click', function(e){
+//         const question = e.currentTarget.parentElement.parentElement;
+//         question.classList.toggle('show-text')
+//     })
+// })
+
+
+
 
 // 
 

@@ -109,7 +109,7 @@
     /* background-color: rgba(255, 0, 0, 0.5); */
     display: grid;
     place-items: center;
-    transition: all 0.3s ease;
+    transition: all 0.3s linear;
     visibility: hidden;
     z-index: -10;
 }
@@ -117,5 +117,26 @@
 .open-modal{
     visibility: visible;
     z-index: 10;
+}
+
+/* collapsible sms */
+.question-text{
+    display: none;
+}
+
+.show-text .question-text{
+    display: block;
+}
+
+.minus-icon{
+    display: none;
+}
+
+.show-text .minus-icon{
+    display: inline;
+}
+
+.show-text .plus-icon{
+    display: none;
 }
 
