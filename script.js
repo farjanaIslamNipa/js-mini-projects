@@ -221,7 +221,7 @@ questions.forEach(function(question){
     const collapseBtn = question.querySelector('.question-btn');
     collapseBtn.addEventListener('click', function(){
 
-        questions.forEach('click', function(item){
+        questions.forEach(function(item){
             if(item !== question) {
                 item.classList.remove('show-text');
             }

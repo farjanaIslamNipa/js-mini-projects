@@ -53,179 +53,215 @@
                 </div>
             </div>
         </nav>
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <div class="sidebar-header d-flex justify-content-between px-2 text-white pt-3">
-                <h1><span class="ml-2"><i class="fa-brands fa-js"></i></span></h1>
-                <button class="btn close-sidebar text-white"><i class="fas fa-times"></i></button>
+    </header>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header d-flex justify-content-between px-2 text-white pt-3">
+            <h1><span class="ml-2"><i class="fa-brands fa-js"></i></span></h1>
+            <button class="btn close-sidebar text-white"><i class="fas fa-times"></i></button>
 
-            </div>
-            <hr class="">
-            <div class=" ml-3 links">
-                <a class="side-link d-block" href="">Home</a>
-                <a class="side-link d-block" href="">About</a>
-                <a class="side-link d-block" href="">Projects</a>
-                <a class="side-link d-block" href="">contact</a>
-            </div>
-        </aside>
-        <!-- Color Flipper and counter -->
-        <section>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div id="background_color" class="pt-4">
-                            <h4 class="text-center mb-3 text-uppercase py-2">Color Flipper</h4>
-                            <nav class="text-center bg-secondary shadow py-3 px-5">
-                                <ul class="m-0 p-0">
-                                    <li class="d-inline mr-3 mb-0"><a class="text-white" href="index.html">Simple</a>
-                                    </li>
-                                    <li class="d-inline mb-0"><a class="text-white" href="hex.html">Hex</a></li>
-                                </ul>
-                            </nav>
-
-                            <div class="py-5 my-5 text-center">
-                                <div class="py-4 w-50 mx-auto bg-dark rounded shadow mb-4">
-                                    <h2 class="mb-0 text-white">Background Color:</h2>
-                                    <h5 class="mb-0"><span class="color text-capitalize">#F1f5f8</span></h5>
-                                </div>
-                                <div class="text-white mb-5 mt-5">
-                                    <button
-                                        class="btn border border-dark text-dark rounded px-5 font-weight-bold shadow-sm"
-                                        id="btn">Click me</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="bg-white text-center pt-4 pb-5">
-                            <h2>Our Review</h2>
-                            <div style="width: 60px;" class="mx-auto">
-                                <hr class="m-0" style="border: 2px solid rgb(112, 203, 233)">
-                            </div>
-
-                            <article class="pt-4">
-                                <div class="image-container px-5">
-                                    <img id="person-img" class="img-fluid rounded-full" src="./person.jpg" alt="">
-                                    <h4 id="author" class="text-capitalize">Sarah Jones</h4>
-                                    <h6 id="job" class="text-info text-capitalize font-weight-normal">UX Designer</h6>
-                                    <p id="info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora
-                                        ratione laboriosam, odit iusto maiores qui sunt sapiente architecto, provident
-                                        quaerat suscipit consequuntur ut, facilis nulla porro enim quibusdam quisquam
-                                        quidem! Dolore temporibus reiciendis laudantium delectus. Fugiat distinctio
-                                        reprehenderit exercitationem ut.</p>
-                                </div>
-                                <div>
-                                    <button class="btn prev-btn"><span class="text-info"><i
-                                                class="fa-solid fa-chevron-left"></i></span></button>
-                                    <button class="btn next-btn"><span class="text-info"><i
-                                                class="fa-solid fa-chevron-right"></i></span></button>
-                                </div>
-                                <button class="btn border border-info text-info mt-2 random-btn">Surprise me</button>
-                            </article>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Our Review -->
-        <section>
-            <div class="container-fluid">
-                <div class="row mb-5">
-                    <div class="col-md-6">
-                        <div class="pt-4 text-center bg-white rounded py-5">
-                            <h1 style="font-size: 50px;" class="">Counter</h1>
-                            <div>
-                                <h2 style="font-size: 80px;" id="value" class="my-3 pb-3">0</h2>
-                            </div>
-                            <div class="pb-5">
-                                <button
-                                    class="counterBtn decrease border border-dark rounded text-dard">Decrease</button>
-                                <button
-                                    class="counterBtn reset border border-dark rounded text-dark mx-3">Reset</button>
-                                <button
-                                    class="counterBtn increase border border-dark rounded text-dard">Increase</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="py-5 bg-white text-center mt-4">
-                            <h1 class="pt-5">Creating Modal</h1>
-                            <div class="my-4 pb-5">
-                                <button class="btn create-modal-btn btn-info rounded px-4">Click to open modal</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="container-fluid">
-            <!-- Question project -->
+        </div>
+        <hr class="">
+        <div class=" ml-3 links">
+            <a class="side-link d-block" href="">Home</a>
+            <a class="side-link d-block" href="">About</a>
+            <a class="side-link d-block" href="">Projects</a>
+            <a class="side-link d-block" href="">contact</a>
+        </div>
+    </aside>
+    <!-- Color Flipper and counter -->
+    <section>
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="questions bg-white rounded p-5">
-                        <div class="title">
-                            <h3 class="text-center">Question Project</h3>
-                        </div>
-                        <div class="section-center mt-4">
-                            <!--single question  -->
-                            <article class="question mb-3">
-                                <div class="question-title d-flex justify-content-between bg-secondary text-white align-items-center px-3 py-2 shadow">
-                                    <p class="mb-0">Do you accept all major credit cards?</p>
-                                    <button class="btn question-btn">
-                                        <span class="plus-icon text-white"><i class="fa-solid fa-plus"></i></span>
-                                        <span class="minus-icon text-white"><i class="fa-solid fa-minus"></i></span>
-                                    </button>
-                                </div>
-                                <!-- question-text -->
-                                <div class="question-text">
-                                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit laborum quis iste culpa dignissimos ratione eveniet magni hic autem officiis.</p>
-                                </div>
-                            </article>
-                            <!--end single question  -->
-                            <!--single question  -->
-                            <article class="question mb-4">
-                                <div class="question-title  d-flex justify-content-between bg-secondary text-white align-items-center px-3 py-2 shadow">
-                                    <p class="mb-0">Do you use organic ingredients?</p>
-                                    <button class="btn question-btn">
-                                        <span class="plus-icon text-white"><i class="fa-solid fa-plus"></i></span>
-                                        <span class="minus-icon text-white"><i class="fa-solid fa-minus"></i></span>
-                                    </button>
-                                </div>
-                                <!-- question-text -->
-                                <div class="question-text">
-                                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit laborum quis iste culpa dignissimos ratione eveniet magni hic autem officiis.</p>
-                                </div>
-                            </article>
-                            <!--end single question  -->
-                            <!--single question  -->
-                            <article class="question mb-4">
-                                <div class="question-title  d-flex justify-content-between bg-secondary text-white align-items-center px-3 py-2 shadow">
-                                    <p class="mb-0">Do you support local farmers?</p>
-                                    <button class="btn question-btn">
-                                        <span class="plus-icon text-white"><i class="fa-solid fa-plus"></i></span>
-                                        <span class="minus-icon text-white"><i class="fa-solid fa-minus"></i></span>
-                                    </button>
-                                </div>
-                                <!-- question-text -->
-                                <div class="question-text">
-                                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit laborum quis iste culpa dignissimos ratione eveniet magni hic autem officiis.</p>
-                                </div>
-                            </article>
-                            <!--end single question  -->
+                    <div id="background_color" class="pt-4">
+                        <h4 class="text-center mb-3 text-uppercase py-2">Color Flipper</h4>
+                        <nav class="text-center bg-secondary shadow py-3 px-5">
+                            <ul class="m-0 p-0">
+                                <li class="d-inline mr-3 mb-0"><a class="text-white" href="index.html">Simple</a>
+                                </li>
+                                <li class="d-inline mb-0"><a class="text-white" href="hex.html">Hex</a></li>
+                            </ul>
+                        </nav>
+
+                        <div class="py-5 my-5 text-center">
+                            <div class="py-4 w-50 mx-auto bg-dark rounded shadow mb-4">
+                                <h2 class="mb-0 text-white">Background Color:</h2>
+                                <h5 class="mb-0"><span class="color text-capitalize">#F1f5f8</span></h5>
+                            </div>
+                            <div class="text-white mb-5 mt-5">
+                                <button class="btn border border-dark text-dark rounded px-5 font-weight-bold shadow-sm"
+                                    id="btn">Click me</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6"></div>
+                <div class="col-md-6">
+                    <div class="bg-white text-center pt-4 pb-5">
+                        <h2>Our Review</h2>
+                        <div style="width: 60px;" class="mx-auto">
+                            <hr class="m-0" style="border: 2px solid rgb(112, 203, 233)">
+                        </div>
+
+                        <article class="pt-4">
+                            <div class="image-container px-5">
+                                <img id="person-img" class="img-fluid rounded-full" src="./person.jpg" alt="">
+                                <h4 id="author" class="text-capitalize">Sarah Jones</h4>
+                                <h6 id="job" class="text-info text-capitalize font-weight-normal">UX Designer</h6>
+                                <p id="info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora
+                                    ratione laboriosam, odit iusto maiores qui sunt sapiente architecto, provident
+                                    quaerat suscipit consequuntur ut, facilis nulla porro enim quibusdam quisquam
+                                    quidem! Dolore temporibus reiciendis laudantium delectus. Fugiat distinctio
+                                    reprehenderit exercitationem ut.</p>
+                            </div>
+                            <div>
+                                <button class="btn prev-btn"><span class="text-info"><i
+                                            class="fa-solid fa-chevron-left"></i></span></button>
+                                <button class="btn next-btn"><span class="text-info"><i
+                                            class="fa-solid fa-chevron-right"></i></span></button>
+                            </div>
+                            <button class="btn border border-info text-info mt-2 random-btn">Surprise me</button>
+                        </article>
+                    </div>
+
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
+
+    <!-- Our Review -->
+    <section>
+        <div class="container-fluid">
+            <div class="row mb-5">
+                <div class="col-md-6">
+                    <div class="pt-4 text-center bg-white rounded py-5">
+                        <h1 style="font-size: 50px;" class="">Counter</h1>
+                        <div>
+                            <h2 style="font-size: 80px;" id="value" class="my-3 pb-3">0</h2>
+                        </div>
+                        <div class="pb-5">
+                            <button class="counterBtn decrease border border-dark rounded text-dard">Decrease</button>
+                            <button class="counterBtn reset border border-dark rounded text-dark mx-3">Reset</button>
+                            <button class="counterBtn increase border border-dark rounded text-dard">Increase</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="py-5 bg-white text-center mt-4">
+                        <h1 class="pt-5">Creating Modal</h1>
+                        <div class="my-4 pb-5">
+                            <button class="btn create-modal-btn btn-info rounded px-4">Click to open modal</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container-fluid">
+        <!-- Question project -->
+        <div class="">
+            <div class="w-75 mx-auto">
+                <div class="questions bg-white rounded p-5">
+                    <div class="title">
+                        <h3 class="text-center pb-2">Question Project</h3>
+                    </div>
+                    <div class="section-center mt-4">
+                        <!--single question  -->
+                        <article class="question mb-3">
+                            <div
+                                class="question-title d-flex justify-content-between bg-secondary text-white align-items-center px-3 py-2 shadow">
+                                <p class="mb-0">Do you accept all major credit cards?</p>
+                                <button class="btn question-btn">
+                                    <span class="plus-icon text-white"><i class="fa-solid fa-plus"></i></span>
+                                    <span class="minus-icon text-white"><i class="fa-solid fa-minus"></i></span>
+                                </button>
+                            </div>
+                            <!-- question-text -->
+                            <div class="question-text">
+                                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit laborum
+                                    quis iste culpa dignissimos ratione eveniet magni hic autem officiis.</p>
+                            </div>
+                        </article>
+                        <!--end single question  -->
+                        <!--single question  -->
+                        <article class="question mb-4">
+                            <div
+                                class="question-title  d-flex justify-content-between bg-secondary text-white align-items-center px-3 py-2 shadow">
+                                <p class="mb-0">Do you use organic ingredients?</p>
+                                <button class="btn question-btn">
+                                    <span class="plus-icon text-white"><i class="fa-solid fa-plus"></i></span>
+                                    <span class="minus-icon text-white"><i class="fa-solid fa-minus"></i></span>
+                                </button>
+                            </div>
+                            <!-- question-text -->
+                            <div class="question-text">
+                                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit laborum
+                                    quis iste culpa dignissimos ratione eveniet magni hic autem officiis.</p>
+                            </div>
+                        </article>
+                        <!--end single question  -->
+                        <!--single question  -->
+                        <article class="question mb-4">
+                            <div
+                                class="question-title  d-flex justify-content-between bg-secondary text-white align-items-center px-3 py-2 shadow">
+                                <p class="mb-0">Do you support local farmers?</p>
+                                <button class="btn question-btn">
+                                    <span class="plus-icon text-white"><i class="fa-solid fa-plus"></i></span>
+                                    <span class="minus-icon text-white"><i class="fa-solid fa-minus"></i></span>
+                                </button>
+                            </div>
+                            <!-- question-text -->
+                            <div class="question-text">
+                                <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit laborum
+                                    quis iste culpa dignissimos ratione eveniet magni hic autem officiis.</p>
+                            </div>
+                        </article>
+                        <!--end single question  -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6"></div>
+        </div>
+    </section>
+
+
+    <!-- Menu Project -->
+    <section class="mt-5 bg-white py-5">
+        <div class="container">
+            <h3 class="text-center mb-4"><u>Our Menu</u></h3>
+        
+        <!-- filter buttons -->
+
+        <!-- menu items -->
+        <div class="row">
+            <div class="col-md-6">
+                <article class="menu-item d-flex border border-warning rounded p-3">
+                    <div class=" w-50">
+                        <img class="img-fluid photo" src="./butter.jpg" alt="">
+                    </div>
+        
+                    <div class="item-info w-50 ml-3">
+                        <header class="text-info d-flex justify-content-between">
+                            <h5 class="text-capitalize">buttermilk pancakes</h5>
+                            <h5 class="price">$15</h5>
+                        </header>
+                        <hr class="m-0">
+                        <p class="item-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus non dolor reiciendis assumenda quaerat consequuntur veniam, alias saepe ducimus.
+                        </p>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-6"></div>
+        </div>
+    </div>
+    </section>
 
 
 
-    </header>
+
 
     <div class="modal-overlay">
         <div class="modal-container w-50 bg-white rounded">
