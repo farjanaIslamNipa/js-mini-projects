@@ -140,3 +140,10 @@
     display: none;
 }
 
+
+
+/* menu css */
+.photo {
+    object-fit: cover;
+    height: 180px;
+  }
