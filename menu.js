@@ -88,10 +88,25 @@ const menu = [
                 displayMenuItems(menu)
   });
 
-  filterBtn.addEventListener('click', function(e){
-    console.log(e.currentTarget.dataset);
-  })
+  filterBtn.forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      const category = e.currentTarget.dataset.id;
 
+      const menuCategory = menu.filter(function(menuItem){
+        if(menuItem.category === category){
+          return menuItem;
+        };
+        
+      });
+      if(category === 'all'){
+        console.log('all');
+        displayMenuItems(menu);
+      }else{
+        displayMenuItems(menuCategory);
+      }
+
+    });
+  });
   function displayMenuItems(menuItems){
     let displayMenu = menuItems.map(function(item){
       return ` <div class="col-md-6 mb-4">
