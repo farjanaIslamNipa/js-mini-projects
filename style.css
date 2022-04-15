@@ -147,3 +147,9 @@
     object-fit: cover;
     height: 180px;
   }
+
+  .filter-btn {
+      padding: 3px 10px;
+      width: 90px;
+      color: goldenrod;
+  }

@@ -82,28 +82,38 @@ const menu = [
   ];
 
   const sectionCenter = document.querySelector('.section-center');
+  const filterBtn = document.querySelectorAll('.filter-btn');
 
   window.addEventListener('DOMContentLoaded', function(){
-      let displayMenu = menu.map(function(item){
-          return ` <div class="col-md-6 mb-4">
-          <article class="menu-item d-flex border border-warning rounded p-3 mx-3">
-              <div style="width: 40%;" class="">
-                  <img class="img-fluid photo" src=${item.img} alt="">
-              </div>
-  
-              <div style="width: 60%;" class="item-info ml-3">
-                  <header class="text-info d-flex justify-content-between">
-                      <h5 class="text-capitalize">${item.title}</h5>
-                      <h6 class="price text-danger mb-0 font-weight-bold" style="line-height: 28px;">$${item.price}</h6>
-                  </header>
-                  <hr class="m-0">
-                  <p class="item-text">
-                      ${item.desc}
-                  </p>
-              </div>
-          </article>
-      </div>`;
-      });
-     displayMenu = displayMenu.join('');
-     sectionCenter.innerHTML = displayMenu;
+                displayMenuItems(menu)
+  });
+
+  filterBtn.addEventListener('click', function(e){
+    console.log(e.currentTarget.dataset);
   })
+
+  function displayMenuItems(menuItems){
+    let displayMenu = menuItems.map(function(item){
+      return ` <div class="col-md-6 mb-4">
+      <article class="menu-item d-flex border border-warning rounded p-3 mx-3">
+          <div style="width: 40%;" class="">
+              <img class="img-fluid photo" src=${item.img} alt="">
+          </div>
+
+          <div style="width: 60%;" class="item-info ml-3">
+              <header class="text-info d-flex justify-content-between">
+                  <h5 class="text-capitalize">${item.title}</h5>
+                  <h6 class="price text-danger mb-0 font-weight-bold" style="line-height: 28px;">$${item.price}</h6>
+              </header>
+              <hr class="m-0">
+              <p class="item-text">
+                  ${item.desc}
+              </p>
+          </div>
+      </article>
+  </div>`;
+  });
+ displayMenu = displayMenu.join('');
+ sectionCenter.innerHTML = displayMenu;
+  }
+    
