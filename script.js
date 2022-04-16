@@ -230,6 +230,27 @@ questions.forEach(function(question){
     })
 })
 
+
+// video project css
+const videoBtn = document.querySelector('.switch-btn');
+const videoContainer = document.querySelector('.video-container');
+
+videoBtn.addEventListener('click', function(){
+    if(!videoBtn.classList.contains('slide')){
+        videoBtn.classList.add('slide');
+        videoContainer.pause();
+    }else{
+        videoBtn.classList.remove('slide');
+        videoContainer.play();
+    }
+})
+
+// preloader
+const preloader = document.querySelector('.preloader');
+
+window.addEventListener('load', function(){
+    preloader.classList.add('hide-preloader')
+})
 // traversing the dom
 // const collapseBtns = document.querySelectorAll('.question-btn');
 
