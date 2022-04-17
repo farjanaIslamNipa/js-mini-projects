@@ -237,3 +237,37 @@
     visibility: hidden;
   }
   
+  .banner {
+      background: url('./banner.jpg');
+      height: 750px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+  }
+
+  .white-btn {
+      color: white;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      border: 2px solid goldenrod;
+      border-radius: 0;
+      padding: 8px 30px !important;
+      margin-top: 20px;
+  }
+
+  .top-link{
+      background-color: #17a2b8;
+      color: white;
+      display: inline-block;
+      padding: 10px 15px;
+      border-radius: 50%;
+      position: fixed;
+      bottom: 3rem;
+      right: 3rem;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      animation: bounce 2s ease-in-out infinite;
+  }
+  .top-link:hover{
+      color: white;
+  }

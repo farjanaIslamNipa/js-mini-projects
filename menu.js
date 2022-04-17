@@ -100,11 +100,11 @@ const menu = [
 
           <div style="width: 60%;" class="item-info ml-3">
               <header class="text-info d-flex justify-content-between">
-                  <h5 class="text-capitalize">${item.title}</h5>
+                  <h5 class="">${item.title}</h5>
                   <h6 class="price text-danger mb-0 font-weight-bold" style="line-height: 28px;">$${item.price}</h6>
               </header>
               <hr class="m-0">
-              <p class="item-text mb-2">
+              <p class="text-capitalize item-text mb-2">
                   ${item.desc}
               </p>
               <strong class="">Category: <span class="text-warning">${item.category}</span></strong>
@@ -125,7 +125,7 @@ const menu = [
     }, ['all']);
     
     const categoryBtn = categories.map(function(category){
-      return `<button data-id=${category} class="filter-btn btn border border-info mx-1">${category}</button>`
+      return `<button data-id=${category} class="filter-btn btn border border-info mx-1 text-capitalize">${category}</button>`
     }).join("");
     btnContainer.innerHTML = categoryBtn;
     const filterBtn = btnContainer.querySelectorAll('.filter-btn');
