@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+  }
 .main-bg {
     background-color: aliceblue;
 }
@@ -57,6 +60,24 @@
     }
     
 }
+
+/* for scroll project */
+
+
+/* for scroll project */
+.links-container{
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+    
+@media screen and (min-width: 992px) {
+    .links-container {
+        height: auto !important;
+      }
+}
+
 
 .show-links {
     height: 160px;
@@ -121,11 +142,15 @@
 
 /* collapsible sms */
 .question-text{
-    display: none;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    /* display: none; */
 }
 
 .show-text .question-text{
-    display: block;
+    height: 40px;
+    /* display: block; */
 }
 
 .minus-icon{
@@ -236,6 +261,8 @@
     z-index: -999;
     visibility: hidden;
   }
+
+  /* scroll project */
   
   .banner {
       background: url('./banner.jpg');
@@ -260,14 +287,42 @@
       background-color: #17a2b8;
       color: white;
       display: inline-block;
-      padding: 10px 15px;
+      padding: 4px 8px 4px 10px;
       border-radius: 50%;
       position: fixed;
       bottom: 3rem;
       right: 3rem;
       box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
       animation: bounce 2s ease-in-out infinite;
+      visibility: hidden;
+      z-index: -100;
   }
   .top-link:hover{
       color: white;
+  }
+
+  .show-top-link {
+    visibility: visible;
+    z-index: 100;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .fixed-nav{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #96cef8;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
