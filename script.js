@@ -264,7 +264,29 @@ window.addEventListener('load', function(){
 
 
 
-// 
+// tabs scripts
+const tabBtns = document.querySelectorAll('.tab-btn');
+const tabs = document.querySelector('.tabs');
+const tabContent = document.querySelectorAll('.content');
+
+tabs.addEventListener('click', function(e){
+    const tabBtnId = e.target.dataset.id;
+
+    if (tabBtnId) {
+        // remove active from other buttons
+        tabBtns.forEach(function(btn){
+            btn.classList.remove('active');
+            e.target.classList.add('active');
+        });
+        // hide other tab content 
+        tabContent.forEach(function(content){
+            content.classList.remove('active')
+        });
+
+        const element = document.getElementById(tabBtnId);
+        element.classList.add('active');
+    }
+})
 
 
 // Getting current date and time
@@ -306,3 +328,5 @@ window.addEventListener('load', function(){
 //   } 
 //   } 
 // console.log("Current Time : "+hour + prepand + " : " + minute + " : " + second);
+
+// 

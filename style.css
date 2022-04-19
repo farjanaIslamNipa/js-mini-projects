@@ -149,7 +149,7 @@ html {
 }
 
 .show-text .question-text{
-    height: 40px;
+    height: 55px;
     /* display: block; */
 }
 
@@ -325,4 +325,55 @@ html {
       width: 100%;
       background-color: #96cef8;
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  /* tab project css */
+  .tab-img {
+      height: 200px;
+      width: auto;
+      margin: 15px 0;
+  }
+
+  .content {
+      display: none;
+      text-align: center;
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+  }
+
+  .content.active{
+      display: block;
+  }
+
+  .tab-btn{
+      background-color: #dde8f1;
+      border-radius: 0;
+      margin-top: 20px;
+      display: block;
+      width: 20%;
+      text-transform: uppercase;
+  }
+  .tab-btn:focus{
+      box-shadow: none !important;
+  }
+  .active{
+      background-color: rgb(242, 249, 250);
+      color: #17a2b8;
+  }
+
+  .tab-btn:hover:not(.active){
+    background-color: white;
+      border: 1px solid rgb(129, 192, 192);
+  }
+  .tab-btn:nth-child(2){
+      border-right: 1px solid rgb(129, 192, 192);
+      border-left: 1px solid rgb(129, 192, 192);
+  }
+
+  .tab-btn:nth-child(1){
+      border-top-left-radius: 5px;
+  }
+  .tab-btn:nth-child(3){
+      border-top-right-radius: 5px;
   }
