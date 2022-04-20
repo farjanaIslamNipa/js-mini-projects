@@ -377,3 +377,27 @@ html {
   .tab-btn:nth-child(3){
       border-top-right-radius: 5px;
   }
+
+  /* count down timer css */
+  .deadline-format {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      background-color: rgb(34, 33, 56);
+      margin-right: 20px;
+      color: rgb(235, 235, 235);
+      height: 75px;
+      width: 85px;
+  }
+
+  .timer-box {
+      text-align: center;
+  }
+  .timer-box h4{
+      margin-bottom: 0px !important;
+  }
+  .timer-box span{
+      letter-spacing: 2px !important;
+      font-weight: lighter;
+  }
