@@ -401,3 +401,26 @@ html {
       letter-spacing: 2px !important;
       font-weight: lighter;
   }
+
+  .dropdown-box {
+      display: none;
+      background-color: #96cef8;
+      border-radius: 5px;
+      position: absolute;
+      left: 70%;
+      top: 35px;
+      z-index: 9999999;
+  }
+
+  .lorem-form label{
+    font-weight: bold;
+  }
+  .lorem-form input{
+    border: none;
+    background-color: #e0f1fd;
+    margin: 0 15px;
+    border-radius: 5px;
+    padding: 7px;
+    width: 80px;
+    text-align: center;
+  }

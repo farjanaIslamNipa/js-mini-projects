@@ -27,10 +27,17 @@
                 <div class="nav-header bg-white px-5 py-1 d-lg-flex d-block align-items-center justify-content-between w-100">
                     <div><a style="text-decoration: none;" href="index.html"><span class="text-info" style="font-size: 55px;"><i class="fas fa-passport"></i> Js</span></a>
                     </div>
-                    <div class="ml-5 links">
+                    <div class="ml-5 links position-relative">
                         <a class="menu-link d-lg-inline-block d-block" href="">Home</a>
                         <a class="menu-link d-lg-inline-block d-block" href="">About</a>
                         <a class="menu-link d-lg-inline-block d-block" href="scroll.html">Scroll Project</a>
+                        <a class="menu-link d-lg-inline-block d-block project-dropdown" href="#" data-id="dropdown">Projects</a>
+                        <div  class="dropdown-box">
+                            <p class="d-inline-block px-5">project 1</p><br>
+                            <p class="d-inline-block px-5">project 2</p><br>
+                            <p class="d-inline-block px-5">project 3</p><br>
+                            <p class="d-inline-block px-5">project 4</p>
+                        </div>
                         <a class="menu-link d-lg-inline-block d-block" href="">contact</a>
                     </div>
                     <div class="d-lg-block d-none">
@@ -321,6 +328,24 @@
             </div>
         </div>
     </section>
+
+    <!-- Paragraph generator project -->
+    <section class="container mb-5 pb-5">
+        <div class="bg-white p-4 rounded shadow" >
+            <div class="h3 text-center text-info mb-4">Tired of boring lorem ipsam?</div>
+            <form class="lorem-form">
+                <div class="d-flex mx-auto align-items-center justify-content-center">
+                <label for="amount">Paragraphs:</label>
+                <input class="lorem-input" type="number" name="amount" id="amount" placeholder="1">
+                
+                <div class="text-right">
+                    <button class="btn btn-info px-5" type="submit">generate</button>
+                </div>
+            </div>
+            </form>
+            <article class="lorem-text"></article>
+        </div>
+    </section>
     <!-- video project -->
     <section class="position-relative pb-5">
         <!-- preloader -->
@@ -341,10 +366,6 @@
             </button>
         </header>
     </section>
-
-
-
-
 
     <div class="modal-overlay">
         <div class="modal-container w-50 bg-white rounded">
