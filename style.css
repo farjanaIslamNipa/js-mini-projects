@@ -424,3 +424,9 @@ html {
     width: 80px;
     text-align: center;
   }
+
+  @media print {
+    #printPageButton {
+      display: none;
+    }
+  }

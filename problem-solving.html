@@ -17,11 +17,22 @@
 
 </head>
 
-<body class="main-bg">
+<body onload="animate_string('target')" class="main-bg">
     <h1 class="text-center">Problem Solving</h1>
     <!-- Time Output challenge -->
     <h5 class="text-center">Today is : <span class="current-day"></span> </h5>
     <h5 class="text-center">Current Time is : <span class="current-time"></span> </h5>
+
+    <!-- Printing Current Page -->
+    <div class="text-center my-3">
+        <button onclick="printCurrentPage()" id="printPageButton" class="btn border border-danger text-danger px-5">Print Current Page</button>
+    </div>
+
+    <!-- Rotating string -->
+    <div class="text-center">
+        <p id="target">w3resource </p>
+        <!-- <p id="target">w3resource</p> -->
+    </div>
 
     <!-- Bootstrap Js -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
