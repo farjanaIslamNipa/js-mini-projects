@@ -34,15 +34,45 @@ function animate_string(id){
     const element = document.getElementById(id);
     const textNode = element.childNodes[0];
     let text = textNode.data;
-
+    
     setInterval(function(){
         text = text[text.length - 1] + text.substring(0, text.length -1);
         textNode.data = text;
     }, 100)
+
+    // this code also worked
+    // setInterval(function(){
+    //     text = text[text.length - 1] + text.substring(0, text.length -1);
+    //     element.textContent = text;
+    // }, 100)
+
+    // console.log(typeof element.textContent);
 }
 
 
 
+// finding leap year
+
+function findLeapYear(e){
+    e.preventDefault();
+    let showResult = document.querySelector('.show-result');
+    let leapYear = document.querySelector('.leap-year');
+    let leapYearValue = leapYear.value;
+    showResult.innerHTML = getLeapYear(leapYearValue);
+    if(showResult.innerHTML == 'true'){
+        showResult.classList.remove('text-danger');
+        showResult.classList.add('text-success');
+        showResult.innerHTML = 'Leap Year'
+    }else{
+        showResult.classList.remove('text-success');
+        showResult.classList.add('text-danger');
+        showResult.innerHTML = 'Not a Leap Year'
+    }
+}
+
+function getLeapYear(year){
+   return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
+}
 
 
 
