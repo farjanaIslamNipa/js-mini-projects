@@ -68,6 +68,9 @@ function findLeapYear(e){
         showResult.classList.add('text-danger');
         showResult.innerHTML = 'Not a Leap Year'
     }
+    if(leapYearValue === ''){
+        showResult.innerHTML = ''
+    }
 }
 
 function getLeapYear(year){
@@ -86,8 +89,36 @@ for (let year = 2014; year <= 2050; year++)
        
     }
 
-    // for (let index = 0; index < array.length; index++) {
-    //     const element = array[index];
-        
-    // }
 
+    // Get a random integer from 1 to 10 inclusive
+   
+
+    function prevent(e){
+        e.preventDefault();
+        const givenNum = Math.ceil(Math.random() * 10);
+        const showResult = document.querySelector('.show-number');
+        const numberInput = document.getElementById('number-input').value;
+        showResult.textContent = givenNum;
+        if(numberInput == givenNum) {
+            showResult.classList.add('text-info')
+            showResult.classList.remove('text-danger')
+            showResult.textContent = "Number matched";
+        }else{
+            showResult.classList.add('text-danger')
+            showResult.classList.remove('text-info')
+            showResult.textContent = "Not matched, the number was " + givenNum;
+        }
+    }
+
+    console.log(document.URL);
+    // Write a JavaScript program to get the difference between a given number and 13, if the number is greater than 13 return double the absolute difference.
+
+    function difference(n)
+    {
+       if (n <= 13)
+           return 13 - n;
+       else
+           return (n - 13) * 2;
+    }
+   console.log(difference(32))
+   console.log(difference(11))
