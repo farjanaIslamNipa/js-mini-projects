@@ -84,7 +84,7 @@ for (let year = 2014; year <= 2050; year++)
     let d = new Date(year, 0, 1);
     
     if ( d.getDay() === 0 ){
-        console.log("1st January is being a Sunday  "+year);
+        console.log("1st January is being a Sunday  "+ year);
     }
        
     }
@@ -110,15 +110,66 @@ for (let year = 2014; year <= 2050; year++)
         }
     }
 
-    console.log(document.URL);
+    // console.log(document.URL);
     // Write a JavaScript program to get the difference between a given number and 13, if the number is greater than 13 return double the absolute difference.
 
-    function difference(n)
-    {
-       if (n <= 13)
-           return 13 - n;
-       else
-           return (n - 13) * 2;
+    function max_of_three(x, y, z){
+        let max_num = 0;
+
+        if(x > y){
+            max_num = x;
+        }else{
+            max_num = y;
+        }
+        if(z > max_num){
+            max_num = z;
+        }
+        return max_num;
     }
-   console.log(difference(32))
-   console.log(difference(11))
+    // console.log(max_of_three(20, 25, 24), ' is the max number');
+
+    function nearestValue(x, y){
+       if (x != y){
+        let x1 = Math.abs(100 - x);
+        let y1 = Math.abs(100 - y);
+        if(x1 < y1){
+            return x;
+        }else{
+            return y;
+        }
+        
+       }else{
+        return false;
+       }
+    }
+
+    // console.log(nearestValue(90, 90), ' is the nearest value');
+
+function checkNumber(x){
+    if(x >= 40 && x <= 60){
+        return true;
+    }else if (x >= 70 && x <= 100){
+        return true;
+    }else{
+        return false;
+    }
+}
+// console.log(checkNumber(110), 'check');
+
+function largerNumber(x, y){
+    let x1;
+    let y1;
+    if(x >= 40 && x <= 60){
+        x1 = x;
+    }
+    if(y >= 40 && y <= 60){
+        y1 = y;
+    }
+    if(x1 > y1){
+        return x1;
+    }else{
+        y1
+    }
+}
+
+console.log(largerNumber(45, 58));
