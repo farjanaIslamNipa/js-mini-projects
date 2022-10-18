@@ -1,0 +1,40 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 FINAL//EN">
+<html>
+<head>
+<title>date magic</title>
+
+<script name="javascript">
+function formatDate(sValue) {
+    console.log(sValue)
+    if (sValue.length == 2 || sValue.length == 5)
+        document.forms[0].datefield.value = sValue + "/";
+}
+function validDate(sValue) {
+    var bad = false;
+    var dTest = new Date(sValue);
+
+    if (isNaN(dTest.getTime()))
+        bad = true;
+
+    if (dTest.getDate() != sValue.substring(3,5))
+        bad = true;
+
+    if (bad) alert("Please enter a valid date.");
+}
+</script>
+
+<style type="text/css">
+</style>
+
+<meta name="author" content="?">
+<meta name="keywords" content="?">
+<meta name="description" content="?">
+</head>
+
+<body onload="">
+<form>
+<input type="text" name="datefield" onkeyup="formatDate(this.value);"  maxlength="10" />
+</form>
+</body>
+</html>

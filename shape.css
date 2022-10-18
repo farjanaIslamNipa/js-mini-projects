@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  place-items: center;
+  background: #0069d9;
+  font-family: 'Lato', sans-serif;
+}
+.wrapper{
+  display: inline-flex;
+  background: rgb(233, 233, 233);
+  height: 300px;
+  width: 400px;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  padding: 20px 15px;
+  box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+}
+.course-type-label{
+  background-color: #fff;
+  height: 60px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+  padding: 0 10px;
+  transition: all 0.3s ease;
+  text-align: center;
+  position: relative;
+}
+.triangle{
+  height: 0;
+  width: 0;
+  border-top: 20px solid #0069d9;
+  border-right: 92px solid transparent;
+  border-bottom: 0em solid transparent;
+  border-left: 92px solid transparent;
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  top: 60px;
+}
+.course-type-input{
+  display: none;
+}
+
+.course-type-input:checked + .course-type-label {
+  background-color: #0069d9;
+}
+
+.course-type-input:checked + .course-type-label .triangle{
+  opacity: 1;
+}
+.course-type-label span{
+  font-size: 20px;
+  color: #808080;
+}
+.course-type-input:checked + .course-type-label span{
+  color: #fff;
+}

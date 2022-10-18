@@ -270,6 +270,7 @@ const tabContent = document.querySelectorAll('.content');
 
 tabs.addEventListener('click', function(e){
     const tabBtnId = e.target.dataset.id;
+    console.log(tabBtnId);
 
     if (tabBtnId) {
         // remove active from other buttons

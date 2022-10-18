@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+      <!-- Fontawesome kit code  -->
+      <script src="https://kit.fontawesome.com/02ea0c4ad9.js" crossorigin="anonymous"></script>
+      <!-- Bootstrap css -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+      <!-- Custom css -->
+  <style>
+  .custom-drop-file {
+  position: relative;
+  padding: 8px;
+  background-color: rgba(164, 164, 164, 0.2);
+  border: 1px solid #e4e4e4;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 200px;
+}
+
+.custom-drop-file input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.custom-drop-file p {
+  margin: 0;
+  color: #a4a4a4;
+}
+
+.file-upload-icon {
+  line-height: 0;
+  font-size: 18px;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="pt-5">
+      <div class="file-upload-content">
+        <label>Resume upload</label>
+        <div class="form-group custom-drop-file">
+          <input type="file" class="form-control">
+          <div class="d-flex align-items-center">
+            <span class="text-primary file-upload-icon d-block"><i class="fa-solid fa-file-arrow-up"></i></span>
+            <span class="d-block pl-2">Attach resume/CV</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
