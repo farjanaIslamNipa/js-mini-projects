@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+      <!-- Fontawesome kit code  -->
+      <script src="https://kit.fontawesome.com/02ea0c4ad9.js" crossorigin="anonymous"></script>
+      <!-- Bootstrap css -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+      <!-- Custom css -->
+  <style>
+/* #STYLE 1 */
+.radio-one-container {
+  position: relative;
+  width: 140px;
+  height: 60px;
+  margin: 5px;
+  float: left;
+  border: 2px solid #50bcf2;
+  box-sizing: border-box;
+}
+
+.radio-one-container .radio-one-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 25px;
+  transition: .3s ease;
+}
+
+.radio-one-container .radio-one-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 140px;
+  height: 100px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radio-one-input[type=radio]:checked ~ .radio-one-content {
+  background-color: #50bcf2;
+  color: white;
+}
+
+@keyframes slidein {
+  from {
+    margin-top: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin: 0%;
+    width: 100%;
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="pt-5">
+   <!-- #STYLE 1 -->
+   <div>
+    <label for="feature1" class="radio-one-container">
+      <input class="radio-one-input" type="radio" name="radio-one" id="feature1"/>
+      <div class="radio-one-content">
+        <span>Feature 1</span>
+      </div>
+    </label>
+    
+    <label for="feature2" class="radio-one-container">
+      <input class="radio-one-input" type="radio" name="radio-one" id="feature2"/>
+      <div class="radio-one-content">
+        <span>Feature 2</span>
+      </div>
+    </label>  
+  </div>
+
+    </div>
+  </div>
+</body>
+</html>
