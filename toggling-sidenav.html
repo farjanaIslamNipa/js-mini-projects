@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    :root {
+    --fw-normal: 400;
+    --fw-dark: 600;
+    --fw-bold: 700;
+
+    /***Colors***/
+    --clr-primary: #333;
+    --clr-text: #fafafa;
+    --clr-blue: #22a7ff;
+    --clr-purple: #871e5f;
+    --clr-green: #19a356;
+    --clr-yellow: #ffff2e;
+    --clr-red: #cd1a21; 
+    --clr-orange: #ff4500;
+
+    /*** Font and Typography ***/
+    --ff-body: Georgia, "Times New Roman", Times, serif;
+    --ff-header: Verdana, Arial, Helvetica, sans-serif;
+    --fs-header: 4.5rem;
+    --fs-header1: 2.5rem;
+    --fs-header2: 1.5rem;
+    --fs-header3: 1.2rem;
+    --fs-lg-para: 1.1rem;
+    --fs-md-para: 1rem;
+    --fs--sm-para: .938rem;
+
+    /*** z index ***/
+    --z-index: 99;
+}
+
+
+
+
+
+/***************************************************
+2. #Global Styles
+***************************************************/
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--ff-body);
+    background: var(--clr-text);
+    color: var(--clr-primary);
+    font-size: var(--fs-para);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    letter-spacing: 2px;
+    padding:  1.25em;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    transition:all .5s;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--ff-header);
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+} */
+
+
+
+  </style>
+</head>
+<body>
+  <section class="bg-hero">
+    <nav class="navbar">
+       <a href="#" class="company-brand"><img src="#" alt="#" class="#"><span>X&L Limited</span></a>
+       <ul class="nav__list">
+          <li class="nav__list-item"><a href="" class="nav__link"></a></li>
+          <li class="nav__list-item"><a href="" class="nav__link">Products</a></li>
+          <li class="nav__list-item"><a href="" class="nav__link">Our Story</a></li>
+          <li class="nav__list-item"><a href="" class="nav__link">Blog</a></li>
+          <li class="nav__list-item"><a href="" class="nav__link">Contact Us</a></li>
+          <div class="social__media">
+             <a href="#" class="sm__link"><i class="fab fa-facebook-f sm__facebook"></i></a>
+             <a href="#" class="sm__link"><i class="fab fa-twitter sm__twitter"></i></a>
+             <a href="#" class="sm__link"><i class="fab fa-instagram sm__instagram"></i></a>
+          </div>
+       </ul>
+       <div>
+          <i class="fas fa-shopping-cart fa-lg shopping-cart">&nbsp;<span class="cart-item">0</span></i>
+       </div>
+       <div class="hamburger">
+          <div class="hamburger-btn"></div>
+       </div>
+    </nav>
+    <div class="hero">
+       <div class="contentBox">
+          <h1 class="hero-title">Do you like <br><span>Smooth Skin?</span></h1>
+          <p class="hero-para">Naturally, the skin is supposed to be smooth and soft, however, the only insurance for dry and oily skin is skincare products that consistently offer effective skin protection. To protect dry and oily skin, make the smart choice, because the choice is yours, and it's simple.</p>
+          <a class="btn-main" href="#">View Our Products &nbsp;&nbsp;&nbsp;<i class="fas fa-angle-right fa-lg"></i></a>
+       </div>
+    </div>
+ </section>
+</body>
+</html>
