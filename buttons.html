@@ -16,54 +16,62 @@
   color: #eee;
   font-family: "Dosis", sans-serif;
 }
+.break-btn-wrapper{
 
-.brk-btn {
+  padding: 17px 0;
+  border: 7px solid rgba(75, 180, 180, 0.5);
+  border-radius: 38px;
+}
+.break-btn {
   position: relative;
-  background: none;
-  color: aqua;
+  background: rgba(75, 180, 180, 0.5);
+  color: white;
   text-transform: uppercase;
   text-decoration: none;
-  border: 0.2em solid aqua;
-  padding: 0.5em 1em;
+  border: 0.2em solid white;
+  border-radius: 30px;
+  padding: 15px 75px;
 }
-.brk-btn::before{
+.break-btn::before{
   content: "";
     display: block;
     position: absolute;
     width: 10%;
-    background: #222;
-    height: 0.3em;
+    background: #346a6a;
+    height: 0.2em;
     right: 20%;
-    top: -0.21em;
+    top: -3px;
     transform: skewX(-45deg);
     -webkit-transition: all 0.5s cubic-bezier(0.86, 0, 0.07, 1);
     transition: all 0.5s cubic-bezier(0.86, 0, 0.07, 1);
 }
-.brk-btn::after{
+.break-btn::after{
   content: "";
     display: block;
     position: absolute;
     width: 10%;
-    background: #222;
-    height: 0.3em;
+    background: #346a6a;
+    height: 0.2em;
     left: 20%;
-    bottom: -0.25em;
+    bottom: -3px;
     transform: skewX(45deg);
     -webkit-transition: all 0.5 cubic-bezier(0.86, 0, 0.07, 1);
     transition: all 0.5s cubic-bezier(0.86, 0, 0.07, 1);
 }
-.brk-btn:hover::before{
-  right: 80%;
+.break-btn:hover::before{
+  right: 75%;
 }
-.brk-btn:hover::after{
-  left: 80%;
+.break-btn:hover::after{
+  left: 75%;
 }
   </style>
 </head>
 <htm>
   <body>
-    <a href="https://yourpalnurav.blogspot.com/" class="brk-btn">
-      Visit Me
-    </a>
+    <div class="break-btn-wrapper">
+      <a href="https://yourpalnurav.blogspot.com/" class="break-btn">
+        Visit Me
+      </a>
+    </div>
   </body>
 </html>
