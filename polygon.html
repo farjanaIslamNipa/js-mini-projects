@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .polygon{
+        background-color: lightgray;
+        width: 90%;
+        margin: 0 auto;
+        height: 70px;
+        clip-path: polygon(7% 17%, 93% 17%, 100% 100%, 0% 100%);
+        border-radius: 5px 5px 10px 10px;
+    }
+    .box {
+        width: 98%;
+    height: 70px;
+    background-color: #b0102d;
+    color: white;
+    clip-path: polygon(94% 0%, 96% 32%, 100% 101%, 3% 101%, 11% -33%, 33% 1%);
+}
+
+.parent {
+  filter: url('#round');
+  overflow:hidden;
+
+  z-index: 1;
+  margin-top: 10vw;
+}
+</style>
+<body>
+    <div class="polygon">
+
+    </div>
+    <div class="parent">
+        <div class="box"></div>
+      </div>
+      <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+              <filter id="round">
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />    
+                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                  <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+              </filter>
+          </defs>
+      </svg>
+      
+      <!-- <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+              <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />    
+                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                  <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+              </filter>
+          </defs>
+      </svg> -->
+</body>
+</html>
