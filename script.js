@@ -1,4 +1,5 @@
 
+console.log('test')
 // Toggle navbar scripts
 const navToggle = document.querySelector('.nav-toggle');
 const links = document.querySelector('.links');
