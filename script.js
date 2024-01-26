@@ -474,3 +474,15 @@ form.addEventListener('submit', function(e){
 // console.log("Current Time : "+hour + prepand + " : " + minute + " : " + second);
 
 // 
+
+let counts =0;
+(function immediate(){
+    if(counts === 0){
+        let counts = 1;
+        console.log(counts)
+    }
+    console.log(counts)
+})();
+
+
+// console.log('just go =>', arr(10))
