@@ -134,11 +134,32 @@ const lowestToHighest = (arr) => {
   console.log(arr.sort((a, b) => b - a))
 }
 
-lowestToHighest([5, 8, 3, 4, 9, 7])
+// lowestToHighest([5, 8, 3, 4, 9, 7])
 
 const removeSpace = (str) => {
   console.log(str.split(' ').join(''))
 }
 
 // removeSpace('myName nipa')
+const student1 ={
+  name: 'Mahbeer',
+  age: 10,
+  course: ['Physics', 'Math', 'Chemistry']
+}
 
+let student2 = {...student1}
+student2['name'] = 'Bob'
+
+let course2 = [...student1.course]
+
+course2[1] = 'Biology'
+
+student2 = { 
+  name: student1.name,
+  age: student1.age,
+  course: course2
+ }
+
+
+
+console.log(student2 , student1)
