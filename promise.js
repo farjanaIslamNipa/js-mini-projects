@@ -48,24 +48,50 @@
 //   console.log(err)
 // })
 
-const promiseFive = new Promise((resolve, reject) => {
-  setTimeout(()=> {
-    let error = false;
-    if(!error){
-      resolve({username: 'JavaScript', age: 50})
-    }else{
-      reject('Error: Js went wrong')
-    }
-  }, 1000)
-})
+// const promiseFive = new Promise((resolve, reject) => {
+//   setTimeout(()=> {
+//     let error = false;
+//     if(!error){
+//       resolve({username: 'JavaScript', age: 50})
+//     }else{
+//       reject('Error: Js went wrong')
+//     }
+//   }, 1000)
+// })
 
-async function consumePromiseFive(){
-  try {
-    const res = await promiseFive
-    console.log(res)
-  } catch (error) {
-    console.log(error)
+// async function consumePromiseFive(){
+//   try {
+//     const res = await promiseFive
+//     console.log(res)
+//   } catch (error) {
+//     console.log(error)
+//   }
+// }
+
+// consumePromiseFive()
+
+// for (var i = 0; i < 3; i++) {
+//   setTimeout(() => {
+//     console.log(i)
+//   }, 1000)
+  
+// }
+
+const nestedArr = [1, 2, [3, 4, [5,6],7], 8, 9, [10, 11, [12, 13, [14, 15]]]];
+const flatArray = []
+
+const flattenArray = (arr) => {
+  for (let i = 0; i < arr.length; i++) {
+    if(Array.isArray(arr[i])){
+      flattenArray(arr[i])
+    }else{
+      flatArray.push(arr[i])
+    }
+    
   }
+  return flatArray
 }
 
-consumePromiseFive()
+console.log(flattenArray(nestedArr))
+
+// result is [ 1,  2,  3,  4,  5,  6, 7,  8,  9, 10, 11, 12, 13, 14, 15 ]
