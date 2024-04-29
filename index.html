@@ -18,6 +18,31 @@
 </head>
 
 <body class="main-bg">
+    <div style="margin-bottom: 50px;" class="px-5">
+        <details>
+            <summary>Click to expand</summary>
+            <p>This content can be expanded or collapsed.</p>
+          </details>
+          <select>
+            <optgroup label="Fruits">
+               <option>Apple</option>
+               <option>Banana</option>
+               <option>Mango</option>
+            </optgroup>
+            <optgroup label="Vegetables">
+               <option>Tomato</option>
+               <option>Broccoli</option>
+               <option>Carrot</option>
+            </optgroup>
+         </select>
+         <!-- <video controls poster="image.png" width="500">
+            <source src="video.mp4" type="video/mp4 />
+          </video> -->
+          <video controls poster="/images/MainAfter.webp" src="/images/video.mp4"  width="500"></video>
+
+          <input type="file" multiple />
+                    
+      </div>
     <header>
         <div class="py-4 text-center">
             <h1><span class="mr-2"><i class="fa-brands fa-js"></i></span> Javascript mini projects</h1>
@@ -32,12 +57,6 @@
                         <a class="menu-link d-lg-inline-block d-block" href="">About</a>
                         <a class="menu-link d-lg-inline-block d-block" href="scroll.html">Scroll Project</a>
                         <a class="menu-link d-lg-inline-block d-block project-dropdown" href="#" data-id="dropdown">Projects</a>
-                        <div  class="dropdown-box">
-                            <p class="d-inline-block px-5">project 1</p><br>
-                            <p class="d-inline-block px-5">project 2</p><br>
-                            <p class="d-inline-block px-5">project 3</p><br>
-                            <p class="d-inline-block px-5">project 4</p>
-                        </div>
                         <a class="menu-link d-lg-inline-block d-block" href="">contact</a>
                     </div>
                     <div class="d-lg-block d-none">
@@ -379,10 +398,8 @@
     </div>
 
     <!-- letter spacing on hover without effecting width -->
-    <div><button type="button" class="auth-btn" data-text="Lorem">Lorem</button></div>
-
-    <div><button type="button" class="auth-btn" data-text="Lorem Ipsum">Lorem Ipsum</button></div>
-    <div><button type="button" class="auth-btn" data-text="Lorem Ipsum Dolor">Lorem Ipsum Dolor</button></div>
+    <small style="margin-left: 20px;">Letter spacing on hover without effection width</small>
+    <div><button type="button" class="auth-btn" data-text="Hover me">Hover me</button></div>
     <!-- letter spacing on hover without effecting width -->
 
   <div class="container">
@@ -400,8 +417,11 @@
           <span>Back-end</span>
         </div>
       </label>
-        <p>Made <span></span> by <a href="https://github.com/gabrielferreiraa" target="_blank">@gabrielferreiraa</a></p>
+        
       </div>
+
+
+ 
   </div>
 
     <!-- Bootstrap Js -->
@@ -414,6 +434,7 @@
     <!-- custom js -->
     <script src="./menu.js"></script>
     <script src="./script.js"></script>
+    <script src="./promise.js"></script>
 </body>
 
 </html>

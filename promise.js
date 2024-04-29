@@ -1,3 +1,5 @@
+
+
 // const promiseOne = new Promise(function(resolve, reject){
 //   setTimeout(()=> {
 //     console.log('async task completed')
@@ -77,21 +79,56 @@
   
 // }
 
-const nestedArr = [1, 2, [3, 4, [5,6],7], 8, 9, [10, 11, [12, 13, [14, 15]]]];
-const flatArray = []
+// const nestedArr = [1, 2, [3, 4, [5,6],7], 8, 9, [10, 11, [12, 13, [14, 15]]]];
+// const flatArray = []
 
-const flattenArray = (arr) => {
-  for (let i = 0; i < arr.length; i++) {
-    if(Array.isArray(arr[i])){
-      flattenArray(arr[i])
-    }else{
-      flatArray.push(arr[i])
-    }
+// const flattenArray = (arr) => {
+//   for (let i = 0; i < arr.length; i++) {
+//     if(Array.isArray(arr[i])){
+//       flattenArray(arr[i])
+//     }else{
+//       flatArray.push(arr[i])
+//     }
     
-  }
-  return flatArray
-}
+//   }
+//   return flatArray
+// }
 
-console.log(flattenArray(nestedArr))
+// console.log(flattenArray(nestedArr))
 
 // result is [ 1,  2,  3,  4,  5,  6, 7,  8,  9, 10, 11, 12, 13, 14, 15 ]
+
+// function addUp(num){
+//   let sum =0;
+//   for (let i = 1; i <= num; i++) {
+
+//     sum += i
+    
+//   }
+//   return sum;
+// }
+
+function addUp(num){
+  let sum =0;
+  for(let i = 1; i <= num; i++){
+    sum += i
+  }
+  return sum;
+}
+
+
+function getBrowserInfo(){
+  let us = navigator.userAgent;
+  console.log(us)
+}
+// console.log(getBrowserInfo())
+
+const shoppingCart = [
+  { product: "iPhone X", quantity: 25, color: "black" },
+  { product: "MacBook Pro 14'", quantity: 6, color: "white" },
+  { product: "HP Spectre", quantity: 0, color: "black" },
+];
+
+
+const groupedObjects = Object.groupBy(shoppingCart, (element, index) => element.color);
+console.log(groupedObjects);
