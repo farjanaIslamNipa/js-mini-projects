@@ -40,5 +40,71 @@ const map = function (arr, fn){
 return filteredArr;
 }
 
-console.log(map(fruits, double))
+
+const str1 = 'farjana '
+const str2 = 'nipa'
+
+const str3 = str1 + str2
+
+
+// console.log(str3)
+
+
+
+
+//Prefix and postfix incremental operation
+
+
+// // POSTFIX
+// let i = 5
+// let j = i++
+
+// console.log(`i: ${i}, j: ${j}`)
+// // Result: i: 6, j: 5
+
+// // PREFIX
+// let p = 6
+// let q = ++p
+
+// console.log(`p: ${p}, q: ${q}`)
+// // Result: p: 7, q: 7
+// console.log(myString)
+// console.log(myString.length)
+
+const min = 5;
+const max = 10;
+
+const getRandomNum = Math.floor(Math.random() * (max - min + 1) + min);
+
+console.log(getRandomNum)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
