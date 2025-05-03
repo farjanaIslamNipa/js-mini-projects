@@ -20,8 +20,6 @@ form.addEventListener('submit', (e) => {
     }else if(bmi >= 24.9){
       result.innerHTML = `<span>${bmi}</span><br><span>You are over</span>`;
     }
-    //show the result
-
   }
 
 });

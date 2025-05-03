@@ -70,7 +70,40 @@ h1 {
           <p>Overweight = Greater than 24.9</p>
         </div>
       </form>
+
+      <div class="my-10">
+        <button class="border px-4 py-1 rounded" id="start">Start</button>
+        <button class="border px-4 py-1 rounded" id="stop">Stop</button>
+      </div>
     </div>
   </body>
   <script src="script.js"></script>
+  <script>
+    const generateColor = () => {
+      const hex = '0123456789ABCDEF'
+      let color = '#'
+      for (let i = 0; i < 6; i++) {
+        color += hex[Math.floor(Math.random() * 16)]
+      }
+      return color
+    }
+    let intervalId;
+    const startChangeBg = () => {
+ 
+      if(!intervalId){
+        intervalId = setInterval(changeBg, 1000)
+
+        function changeBg(){
+          document.body.style.backgroundColor = generateColor()
+        }
+       
+      }
+    }
+    const stopChangeBg = () => {
+      clearInterval(intervalId)
+      intervalId = null
+    }
+    document.querySelector('#start').addEventListener('click', startChangeBg)
+    document.querySelector('#stop').addEventListener('click', stopChangeBg)
+  </script>
 </html>
