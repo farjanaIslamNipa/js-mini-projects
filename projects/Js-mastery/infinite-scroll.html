@@ -28,6 +28,8 @@
   </style>
   <body>
     <h1 class="header">Fox Images</h1>
+    <div class="show"></div>
+    <button class="start">start</button>
     <div class="container">
     <!-- Images of foxes will appear here -->
     </div>
@@ -36,6 +38,26 @@
 
 
   <script>
+    let seconds = 10
+
+    const show = document.querySelector('.show')
+    show.textContent = seconds
+    const button = document.querySelector('.start')
+    button.addEventListener('click', () => {
+      const countdown = setInterval(() => {
+      seconds--
+      show.textContent = seconds
+      if(seconds <= 0){
+        clearInterval(countdown)
+        console.log('count down finished');
+      }
+    }, 1000)
+
+    })
+
+
+
+
     const container = document.querySelector('.container')
     const URL = `https://randomfox.ca/images/`;
         
